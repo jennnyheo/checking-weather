@@ -7,7 +7,7 @@ export default function Loading(){
     <View style={styles.container}>
         <Text style={styles.text}>Getting today's weather</Text>
     </View>
-    );  
+    );
 }
 
 const styles = StyleSheet.create({
