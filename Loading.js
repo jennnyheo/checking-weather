@@ -1,11 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
+
 
 
 export default function Loading(){
     return (
     <View style={styles.container}>
-        <Text style={styles.text}>Getting today's weather</Text>
+        <StatusBar barStyle="dark-content" /> 
+        {/* when it loading, starting with dark..? */}
+        <Text style={styles.text}>Getting today's weather please wait! showing soon!</Text>
     </View>
     );
 }
@@ -20,6 +23,6 @@ const styles = StyleSheet.create({
     },
     text: {
         color: "#2c2c2c",
-        fontSize: 30
+        fontSize: 20
     }
 })
